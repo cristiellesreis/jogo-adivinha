@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <title>Jogo do Adivinha</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <h1>Adivinhe o número!</h1>
+                <span>Estou pensando em um número de 1 a 100, você só tem<span id="tentativas"></span>tentativas</span>
+                <input type="number" id="campo-numero">
+                <button id="botao-adivinhar" onclick="adivinharNumero()">Adivinhar</button>
+                <span id="mensagem"></span>
+            </div>
+        </main>
+
+        <script src="arquivo.js"></script>
+    </body>
+</html>

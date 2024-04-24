@@ -1,0 +1,81 @@
+:root{
+    --cor-de-fundo:#a78aff;
+    --cor-botao:#90ff1a;
+    --cor-texto-principal:#90ff1a;
+    --cor-texto-secundario:#ffffff;
+    --cor-texto-auxiliar:#a78aff;
+
+    --fonte-principal: "Bungee", sans-serif;
+    --fonte-secundaria: "Roboto Mono", monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: var(--cor-de-fundo);
+    width: 32rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+
+h1{
+    font-family:var(--fonte-principal);
+    color: var(--cor-texto-principal);
+    margin-top: 1rem;
+}
+
+span{
+    color: var(--cor-texto-secundario);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+input{
+    width: 14rem;
+    height: 3rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    border: none;
+    font-family: var(--fonte-principal);
+    font-size: 2rem;
+    text-align: center;
+    color: var(--cor-texto-auxiliar);
+}
+
+.container input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+button{
+    width: 10rem;
+    height: 4rem;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-botao);
+    margin: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    color: var(--cor-texto-auxiliar);
+    font-size: 1.3rem;
+    border: none;
+}
+
+input, button{
+    cursor: pointer;
+}
